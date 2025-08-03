@@ -2,14 +2,89 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Debug AVL Tree",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/autoBalancingBinarySearchTree/main",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}/autoBalancingBinarySearchTree",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "miDebuggerPath": "/usr/bin/gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "build-avl-tree",
+      "logging": {
+        "moduleLoad": false,
+        "trace": false
+      }
+    },
+    {
+      "name": "Debug Link List",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/linkList/main",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}/linkList",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "miDebuggerPath": "/usr/bin/gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "build-link-list",
+      "logging": {
+        "moduleLoad": false,
+        "trace": false
+      }
+    },
+    {
+      "name": "Debug Current File",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}/${fileBasenameNoExtension}",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "miDebuggerPath": "/usr/bin/gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "C/C++: gcc build active file",
+      "logging": {
+        "moduleLoad": false,
+        "trace": false
+      }
+    },
+    {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
       "request": "launch",
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/tymon/coding/C_DataStructures",
-      "program": "/home/tymon/coding/C_DataStructures/build/Debug/outDebug",
+      "cwd": "/home/tymon/coding/C_DataStructures/autoBalancingBinarySearchTree",
+      "program": "/home/tymon/coding/C_DataStructures/autoBalancingBinarySearchTree/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
